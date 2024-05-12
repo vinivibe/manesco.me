@@ -2,48 +2,48 @@
 
 import { Typography } from "@material-tailwind/react";
 import {
-  RectangleGroupIcon,
-  FingerPrintIcon,
-  SwatchIcon,
-  HashtagIcon,
-  EyeIcon,
-  DocumentTextIcon,
+  PuzzlePieceIcon,
+  UserGroupIcon,
+  PresentationChartBarIcon,
+  RocketLaunchIcon,
+  WrenchScrewdriverIcon,
+  MegaphoneIcon,
 } from "@heroicons/react/24/solid";
 import { SkillCard } from "@/components";
 
 const SKILLS = [
   {
-    icon: RectangleGroupIcon,
+    icon: PuzzlePieceIcon,
     title: "Estratégias de Customer Success:",
     children:
       "Detalhe como João desenvolve e implementa estratégias inovadoras para garantir o sucesso do cliente, incluindo processos de onboarding criativos e efetivos que melhoram a retenção e a satisfação do cliente.",
   },
   {
-    icon: FingerPrintIcon,
+    icon: UserGroupIcon,
     title: "Liderança e Gestão de Equipes",
     children:
       "Explique como a capacidade de liderança de João permite montar e gerenciar equipes de alto desempenho focadas em Customer Success, contribuindo para um ambiente colaborativo e produtivo.",
   },
   {
-    icon: SwatchIcon,
+    icon: PresentationChartBarIcon,
     title: "Análise de Dados e Insights do Cliente",
     children:
       "Ilustre como João usa análise de dados para extrair insights profundos que informam as estratégias de negócios e a tomada de decisões, aumentando a eficácia das interações com o cliente e o sucesso dos produtos.",
   },
   {
-    icon: HashtagIcon,
+    icon: RocketLaunchIcon,
     title: "Desenvolvimento e Inovação de Produtos",
     children:
       "Mostre como a experiência de João em colaborar estreitamente com equipes de produto resultou em inovações que melhoraram significativamente a experiência do cliente e o desempenho do produto no mercado.",
   },
   {
-    icon: EyeIcon,
+    icon: WrenchScrewdriverIcon,
     title: "Ferramentas de Customer Success",
     children:
       "Apresente o conhecimento técnico de João com ferramentas específicas de Customer Success, como CustomerX e Movidesk, que ele implementou para otimizar o atendimento e a gestão de clientes.",
   },
   {
-    icon: DocumentTextIcon,
+    icon: MegaphoneIcon,
     title: "Comunicação e Networking",
     children:
       "Destaque a habilidade de João em comunicar eficazmente com todos os stakeholders, facilitando um entendimento claro das metas e necessidades entre equipes e clientes.",
