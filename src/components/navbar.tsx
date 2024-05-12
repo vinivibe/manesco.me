@@ -33,7 +33,6 @@ const NavItem: React.FC<NavItemProps> = ({ name, Icon, href }) => {
     <li>
       <Link href={href} passHref>
           <Typography
-            variant="button"
             color="gray"
             className="flex items-center gap-2 font-medium text-gray-900"
           >
