@@ -1,55 +1,49 @@
-import React from "react";
-import {
-  Navbar as MTNavbar,
-  Collapse,
-  Button,
-  IconButton,
-  Typography,
-} from "@material-tailwind/react";
-import {
-  RectangleStackIcon,
-  XMarkIcon,
-  Bars3Icon,
-  AcademicCapIcon,
-  PhoneIcon
-} from "@heroicons/react/24/solid";
+import React from 'react';
+import Link from 'next/link'
+import { Navbar as MTNavbar, Collapse, Button, IconButton, Typography } from '@material-tailwind/react';
+import { RectangleStackIcon, XMarkIcon, Bars3Icon, AcademicCapIcon, PhoneIcon } from '@heroicons/react/24/solid';
 
 const NAV_MENU = [
   {
-    name: "Home",
+    name: 'Home',
     icon: RectangleStackIcon,
+    href: '/' // Assuming client-side route
   },
   {
-    name: "Linkedin",
+    name: 'LinkedIn',
     icon: AcademicCapIcon,
+    href: 'https://www.linkedin.com' // External link
   },
   {
-    name: "Contact",
+    name: 'Contact',
     icon: PhoneIcon,
+    href: '/contact' // Assuming client-side route
   },
 ];
 
 interface NavItemProps {
-  children: React.ReactNode;
-  href?: string;
+  name: string;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  href: string;
 }
 
-function NavItem({ children, href }: NavItemProps) {
+const NavItem: React.FC<NavItemProps> = ({ name, Icon, href }) => {
+  const isExternal = href.startsWith('http');
   return (
     <li>
-      <Typography
-        as="a"
-        href={href || "#"}
-        target={href ? "_blank" : "_self"}
-        variant="paragraph"
-        color="gray"
-        className="flex items-center gap-2 font-medium text-gray-900"
-      >
-        {children}
-      </Typography>
+      <Link href={href} passHref>
+          <Typography
+            variant="button"
+            color="gray"
+            className="flex items-center gap-2 font-medium text-gray-900"
+          >
+            { Icon && <Icon className="h-5 w-5" /> }
+            {name}
+          </Typography>
+      </Link>
     </li>
   );
-}
+};
 
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
@@ -57,10 +51,13 @@ export function Navbar() {
   const handleOpen = () => setOpen((cur) => !cur);
 
   React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
-    );
+    const handleResize = () => {
+      if (window.innerWidth >= 960) {
+        setOpen(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
@@ -70,17 +67,14 @@ export function Navbar() {
           Manesco.me
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
-          {NAV_MENU.map(({ name, icon: Icon }) => (
-            <NavItem key={name} >
-              <Icon className="h-5 w-5" />
-              {name}
-            </NavItem>
+          {NAV_MENU.map((item) => (
+            <NavItem key={item.name} {...item} />
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color="green">Whatsapp</Button>
-          </a>
+          <Link href="https://www.whatsapp.com" passHref>
+            <Button color="green" as="a" target="_blank" rel="noopener noreferrer">WhatsApp</Button>
+          </Link>
         </div>
         <IconButton
           variant="text"
@@ -88,21 +82,14 @@ export function Navbar() {
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
         >
-          {open ? (
-            <XMarkIcon strokeWidth={2} className="h-6 w-6" />
-          ) : (
-            <Bars3Icon strokeWidth={2} className="h-6 w-6" />
-          )}
+          {open ? <XMarkIcon strokeWidth={2} className="h-6 w-6" /> : <Bars3Icon strokeWidth={2} className="h-6 w-6" />}
         </IconButton>
       </div>
       <Collapse open={open}>
         <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
           <ul className="flex flex-col gap-4">
-            {NAV_MENU.map(({ name, icon: Icon }) => (
-              <NavItem key={name}>
-                <Icon className="h-5 w-5" />
-                {name}
-              </NavItem>
+            {NAV_MENU.map((item) => (
+              <NavItem key={item.name} {...item} />
             ))}
           </ul>
         </div>

@@ -14,39 +14,39 @@ import { SkillCard } from "@/components";
 const SKILLS = [
   {
     icon: RectangleGroupIcon,
-    title: "Frontend Web Development:",
+    title: "Estratégias de Customer Success:",
     children:
-      "Creating beautiful and functional web experiences is my forte. Using the latest technologies and best practices, I design and build websites that captivate and engage users.",
+      "Detalhe como João desenvolve e implementa estratégias inovadoras para garantir o sucesso do cliente, incluindo processos de onboarding criativos e efetivos que melhoram a retenção e a satisfação do cliente.",
   },
   {
     icon: FingerPrintIcon,
-    title: "Mobile App Development",
+    title: "Liderança e Gestão de Equipes",
     children:
-      " I specialize in creating responsive and intuitive mobile apps that work seamlessly across iOS & Android devices. From concept to deployment, I handle every stage of the development process.",
+      "Explique como a capacidade de liderança de João permite montar e gerenciar equipes de alto desempenho focadas em Customer Success, contribuindo para um ambiente colaborativo e produtivo.",
   },
   {
     icon: SwatchIcon,
-    title: "Technology Stack",
+    title: "Análise de Dados e Insights do Cliente",
     children:
-      "I'm well-versed in the industry's most popular frontend technologies, including HTML5, CSS3, JavaScript, and frameworks like React and React Native.",
+      "Ilustre como João usa análise de dados para extrair insights profundos que informam as estratégias de negócios e a tomada de decisões, aumentando a eficácia das interações com o cliente e o sucesso dos produtos.",
   },
   {
     icon: HashtagIcon,
-    title: " Web Optimization",
+    title: "Desenvolvimento e Inovação de Produtos",
     children:
-      "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, which in turn boosts user satisfaction and SEO rankings.",
+      "Mostre como a experiência de João em colaborar estreitamente com equipes de produto resultou em inovações que melhoraram significativamente a experiência do cliente e o desempenho do produto no mercado.",
   },
   {
     icon: EyeIcon,
-    title: "User-Centric Design",
+    title: "Ferramentas de Customer Success",
     children:
-      "My development goes hand-in-hand with an eye for design. I create user interfaces that are not only functional but also aesthetically pleasing, providing a seamless and enjoyable user journey.",
+      "Apresente o conhecimento técnico de João com ferramentas específicas de Customer Success, como CustomerX e Movidesk, que ele implementou para otimizar o atendimento e a gestão de clientes.",
   },
   {
     icon: DocumentTextIcon,
-    title: "Testing and Quality Assurance",
+    title: "Comunicação e Networking",
     children:
-      "I rigorously test and debug applications to guarantee a bug-free and secure environment for users. Your peace of mind is as important to me as the functionality of your project.",
+      "Destaque a habilidade de João em comunicar eficazmente com todos os stakeholders, facilitando um entendimento claro das metas e necessidades entre equipes e clientes.",
   },
 ];
 
@@ -55,18 +55,16 @@ export function Skills() {
     <section className="px-8">
       <div className="container mx-auto mb-20 text-center">
         <Typography color="blue-gray" className="mb-2 font-bold uppercase">
-          my skills
+        minhas especialidades
         </Typography>
         <Typography variant="h1" color="blue-gray" className="mb-4">
-          What I do
+        Como Faço a Diferença
         </Typography>
         <Typography
           variant="lead"
           className="mx-auto w-full !text-gray-500 lg:w-10/12"
         >
-          I&apos;m not just a developer; I&apos;m a digital dreamweaver.
-          Crafting immersive online experiences is not just a job but my
-          calling. Discover below how I can help you.
+          Em mais de uma década de dedicação ao Customer Success e à gestão de produtos, desenvolvi uma abordagem única que não apenas resolve problemas, mas transforma completamente a experiência do cliente. Descubra abaixo como minhas estratégias específicas e liderança visionária têm sido fundamentais para o crescimento e a satisfação em várias empresas de tecnologia.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">

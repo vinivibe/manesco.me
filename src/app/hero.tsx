@@ -13,13 +13,13 @@ function Hero() {
             color="blue-gray"
             className="mb-4 lg:text-5xl !leading-tight text-3xl"
           >
-           Bem-vindo ao meu <br/> Portfólio de Customer Success!
+           Transformando a Jornada do Cliente <br/> em Experiências Excepcionais
           </Typography>
           <Typography
             variant="lead"
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
           >
-            um apaixonado especialista em Customer Success baseado no Brasil. Aqui, você terá um vislumbre da minha jornada no mundo do sucesso do cliente, onde criatividade encontra eficácia operacional.
+            Descubra como minha abordagem criativa e analítica em Customer Success e Product Management pode elevar a experiência do seu cliente ao próximo nível. Conecte-se comigo hoje!
           </Typography>
           <div className="grid">
             <Typography
@@ -32,7 +32,7 @@ function Hero() {
               {/* @ts-ignore */}
               <Input color="gray" label="Enter your email" size="lg" />
               <Button color="gray" className="w-full px-4 md:w-[12rem]">
-                Vamos marcar um papo?
+                Vamos bater um papo?
               </Button>
             </div>
           </div>
