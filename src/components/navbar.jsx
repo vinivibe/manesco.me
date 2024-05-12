@@ -24,13 +24,8 @@ const NAV_MENU = [
   },
 ];
 
-interface NavItemProps {
-  name: string;
-  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-  href: string;
-}
 
-const NavItem: React.FC<NavItemProps> = ({ name, Icon, href }) => {
+const NavItem = ({ name, Icon, href }) => {
   const isExternal = href.startsWith('http');
   return (
     <li>
