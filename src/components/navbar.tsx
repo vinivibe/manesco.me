@@ -75,7 +75,7 @@ export function Navbar() {
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
         <Link href="https://wa.me/+5511989781100?text=Vim%20pelo%20seu%20portfólio,%20vamos%20bater%20um%20papo?">
-            <Button  color='green'  target="_blank" rel="noopener noreferrer">WhatsApp</Button>
+            <Button children='WhatsApp' color='green' />
           </Link>
         </div>
         <IconButton
@@ -91,7 +91,7 @@ export function Navbar() {
         <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
           <ul className="flex flex-col gap-4">
             {NAV_MENU.map((item) => (
-              <NavItem key={item.name} {...item} />
+              <NavItem name={item.name} Icon={item.icon} href={item.href} key={item.id} />
             ))}
           </ul>
         </div>
