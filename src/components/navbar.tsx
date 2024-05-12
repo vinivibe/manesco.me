@@ -70,8 +70,8 @@ export function Navbar() {
           Manesco.me
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
-          {NAV_MENU.map(({ name, icon: Icon, href }) => (
-            <NavItem key={name} href={href}>
+          {NAV_MENU.map(({ name, icon: Icon }) => (
+            <NavItem key={name} >
               <Icon className="h-5 w-5" />
               {name}
             </NavItem>
