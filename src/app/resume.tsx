@@ -4,23 +4,23 @@ import { Typography, Button } from "@material-tailwind/react";
 import {
   ChartBarIcon,
   PuzzlePieceIcon,
-  CursorArrowRaysIcon,
+  UserGroupIcon,
   ArrowRightIcon,
 } from "@heroicons/react/24/solid";
 import { ResumeItem } from "@/components";
 
 const RESUME_ITEMS = [
   {
-    icon: ChartBarIcon,
-    children: "Bachelor of Science in Computer Science",
+    icon: UserGroupIcon,
+    children: "Líder experiente, desenvolvendo equipes de alta performance que são motivadas a superar as expectativas e alcançar metas desafiadoras em ambientes competitivos.",
   },
   {
     icon: PuzzlePieceIcon,
-    children: "Certified Web Developer ",
+    children: "Inovador em processos de onboarding e engajamento do cliente, com projetos implementados que resultaram em aumentos significativos de NPS e satisfação do cliente",
   },
   {
-    icon: CursorArrowRaysIcon,
-    children: "Frontend Framework Proficiency Certification",
+    icon: ChartBarIcon,
+    children: "Estrategista em Customer Success, utilizando análise de dados e feedbacks para aprimorar experiências e aumentar o valor percebido pelos clientes.",
   },
 ];
 
@@ -30,24 +30,28 @@ export function Resume() {
       <div className="container mx-auto grid w-full grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <div className="col-span-1">
           <Typography variant="h2" color="blue-gray">
-            My Resume
+            Meu Resumo Profissional
           </Typography>
           <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500">
-            Highly skilled and creative Web Developer with 5+ years of
-            experience in crafting visually stunning and functionally robust
-            websites and web applications.
+            Com mais de uma década de experiência revolucionando a experiência do cliente em tecnologia...
           </Typography>
-          <Button
-            variant="text"
-            color="gray"
-            className="flex items-center gap-2"
+          <a
+            href="https://drive.google.com/uc?export=download&id=11q7T4T_xDFsW9jR6foJtfc_W7po2oKf3"
+            download="Curriculum_Joao_Felipe_Manesco.pdf"
+            className="flex items-center gap-2 text-gray-500 hover:text-gray-700"
           >
-            view more
-            <ArrowRightIcon
-              strokeWidth={3}
-              className="h-3.5 w-3.5 text-gray-900"
-            />
-          </Button>
+            <Button
+              variant="text"
+              color="gray"
+              className="flex items-center gap-2"
+            >
+              Baixe meu curriculum atualizado
+              <ArrowRightIcon
+                strokeWidth={3}
+                className="h-3.5 w-3.5 text-gray-900"
+              />
+            </Button>
+          </a>
         </div>
         <div className="col-span-1 grid gap-y-6 lg:ml-auto pr-0 lg:pr-12 xl:pr-32">
           {RESUME_ITEMS.map((props, idx) => (
@@ -60,3 +64,6 @@ export function Resume() {
 }
 
 export default Resume;
+
+
+
