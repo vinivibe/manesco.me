@@ -5,16 +5,19 @@ import { RectangleStackIcon, XMarkIcon, Bars3Icon, AcademicCapIcon, PhoneIcon } 
 
 const NAV_MENU = [
   {
+    id: 1,
     name: 'Home',
     icon: RectangleStackIcon,
     href: '#home' // Assuming client-side route
   },
   {
+    id: 2,
     name: 'LinkedIn',
     icon: AcademicCapIcon,
     href: 'https://www.linkedin.com' // External link
   },
   {
+    id: 3,
     name: 'Contact',
     icon: PhoneIcon,
     href: '#contact' // Assuming client-side route
@@ -67,7 +70,7 @@ export function Navbar() {
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map((item) => (
-            <NavItem key={item.name} {...item} />
+            <NavItem name={item.name} Icon={item.icon} href={item.href} key={item.id} />
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
