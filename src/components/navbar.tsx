@@ -75,7 +75,7 @@ export function Navbar() {
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
         <Link href="https://wa.me/+5511989781100?text=Vim%20pelo%20seu%20portfólio,%20vamos%20bater%20um%20papo?">
-            <Button children='WhatsApp' color='green' />
+            <Button color='green' >WhatsApp</Button>
           </Link>
         </div>
         <IconButton
