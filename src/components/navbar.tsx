@@ -7,7 +7,7 @@ const NAV_MENU = [
   {
     name: 'Home',
     icon: RectangleStackIcon,
-    href: '/' // Assuming client-side route
+    href: '#home' // Assuming client-side route
   },
   {
     name: 'LinkedIn',
@@ -17,7 +17,7 @@ const NAV_MENU = [
   {
     name: 'Contact',
     icon: PhoneIcon,
-    href: '/contact' // Assuming client-side route
+    href: '#contact' // Assuming client-side route
   },
 ];
 
@@ -72,8 +72,8 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
-          <Link href="https://www.whatsapp.com" passHref>
-            <Button color="green" as="a" target="_blank" rel="noopener noreferrer">WhatsApp</Button>
+        <Link href="https://wa.me/+5511989781100?text=Vim%20pelo%20seu%20portfólio,%20vamos%20bater%20um%20papo?">
+            <Button  color='green'  target="_blank" rel="noopener noreferrer">WhatsApp</Button>
           </Link>
         </div>
         <IconButton
