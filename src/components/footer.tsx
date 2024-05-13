@@ -3,8 +3,8 @@ import { Typography } from "@material-tailwind/react";
 
 const LINKS = [
   { name: "Email", id: 1, href: "mailto:manesco@gmail.com", icon: "/image/icons/gmail.png" },
-  { name: "Linkedin", id: 2, href: "https://www.linkedin.com/in/joao-manesco", icon: "/image/icons/linkedin.png" },
-  { name: "Instagram", id: 3, href: "https://www.instagram.com/joao.manesco", icon: "/image/icons/instagram.png" },
+  { name: "Linkedin", id: 2, href: "https://www.linkedin.com/in/joaomanesco/", icon: "/image/icons/linkedin.png" },
+  { name: "Instagram", id: 3, href: "https://www.instagram.com/jfmanesco/", icon: "/image/icons/instagram.png" },
 ];
 const CURRENT_YEAR = new Date().getFullYear();
 
