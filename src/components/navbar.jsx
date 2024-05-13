@@ -12,9 +12,9 @@ const NAV_MENU = [
   },
   {
     id: 2,
-    name: 'LinkedIn',
+    name: 'Resume',
     icon: AcademicCapIcon,
-    href: 'https://www.linkedin.com' // External link
+    href: '#resume' // External link
   },
   {
     id: 3,
