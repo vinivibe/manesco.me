@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ContactSection() {
     return (
       <div className="bg-white">
@@ -26,12 +28,12 @@ export default function ContactSection() {
               Transformo conhecimento em resultados tangíveis, elevando áreas de Customer Success e Product Management. Descubra como posso impulsionar a inovação e eficiência na sua equipe.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                <a
-                  href="#"
+                <Link
+                  href="https://wa.me/+5511989781100?text=Vim%20pelo%20seu%20portfólio,%20vamos%20bater%20um%20papo?"
                   className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   Entre em Contato Hoje
-                </a>
+                </Link>
               </div>
             </div>
             <div className="relative mt-16 h-80 lg:mt-8">
