@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link'
 import { Navbar as MTNavbar, Collapse, Button, IconButton, Typography } from '@material-tailwind/react';
 import { RectangleStackIcon, XMarkIcon, Bars3Icon, AcademicCapIcon, PhoneIcon } from '@heroicons/react/24/solid';
-
+import Image from 'next/image';
 const NAV_MENU = [
   {
     id: 1,
@@ -60,9 +60,7 @@ export function Navbar() {
   return (
     <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
-        <Typography color="blue-gray" className="text-lg font-bold">
-          Manesco.me
-        </Typography>
+        <Image src="https://i.postimg.cc/mZ8kw1YY/logo.png" alt="Logo" width={50} height={50} />
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map((item) => (
             <NavItem name={item.name} Icon={item.icon} href={item.href} key={item.id} />
