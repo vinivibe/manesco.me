@@ -22,9 +22,6 @@ export function Clients() {
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-6">
           {CLIENTS.map((logo, key) => {
-            
-            console.log(logo)
-            
             return (<Image
               key={key}
               alt={logo}
