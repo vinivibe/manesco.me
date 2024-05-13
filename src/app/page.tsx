@@ -10,6 +10,7 @@ import Resume from "./resume";
 import Testimonial from "./testimonial";
 import PopularClients from "./popular-clients";
 import ContactForm from "./contact-form";
+import ContactSection from "./contact-section";
 
 export default function Portfolio() {
   return (
@@ -21,8 +22,7 @@ export default function Portfolio() {
       <Projects />
       <Resume />
       <Testimonial />
-      <PopularClients />
-      <ContactForm />
+      <ContactSection />
       <Footer />
     </>
   );

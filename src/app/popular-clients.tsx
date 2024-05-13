@@ -16,25 +16,20 @@ export function PopularClients() {
   return (
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto grid items-center place-items-center">
-        <div className="text-center">
-          <Typography variant="h6" className="mb-4 uppercase !text-gray-500">
-            POPULAR CLIENTS
+      <Typography variant="h6" className="mb-4 uppercase !text-gray-500">
+          Marcos de Sucesso
           </Typography>
-          <Typography variant="h2" color="blue-gray" className="mb-4">
-            Trusted by over 10,000+ <br /> clients
+
+        <div className=" flex text-center flex-row items-center justify-center p-4 gap-4">
+          <Typography variant="h3" color="blue-gray" className="mb-4">
+           Aumento de <br /> 30% no NPS <br /> engajamento e suporte ao cliente.
           </Typography>
-        </div>
-        <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
-          {CLIENTS.map((logo, key) => (
-            <Image
-              key={key}
-              alt={logo}
-              width={480}
-              height={480}
-              src={`/logos/logo-${logo}.svg`}
-              className="w-40 grayscale opacity-75"
-            />
-          ))}
+          <Typography variant="h3" color="blue-gray" className="mb-4">
+          Expansão de Equipe  <br /> Crescimento de 50% na equipe 
+          </Typography>
+          <Typography variant="h3" color="blue-gray" className="mb-4">
+           Redução de Churn de Clientes <br /> 25% no churn <br /> 
+          </Typography>
         </div>
       </div>
     </section>
