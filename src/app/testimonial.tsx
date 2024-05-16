@@ -10,7 +10,7 @@ export function Testimonial() {
   const testimonials = [
     {
       title: "Liderança que Inspira",
-      content: "Ter João como parte da nossa equipe na Hippro foi decisivo durante os desafios mais intrincados que enfrentamos. Como um dos fundadores e nosso gestor de produtos, ele não apenas liderou nossa equipe com excepcional habilidade, mas também cultivou uma cultura de empatia e colaboração. Sua liderança não só nos guiou através de complexidades técnicas e operacionais, mas também enfatizou a importância das relações humanas no ambiente de trabalho, enriquecendo nossa experiência profissional e pessoal. A presença e orientação de João foram fundamentais para transformar obstáculos em oportunidades de crescimento e inovação.",
+      content: "Ter João como parte da nossa equipe na Kenoby foi decisivo durante os desafios mais intrincados que enfrentamos. Além disso foi brilhante como ele lidou com situações desafiadoras, com talento e maestria.",
       author: "Marcelo Abreu - Product Manager",
       company: "Product Manager @ Kenoby "
     },
