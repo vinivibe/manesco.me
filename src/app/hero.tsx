@@ -31,7 +31,7 @@ function Hero() {
             <div className="mb-2 flex w-full flex-col gap-4 md:w-10/12 md:flex-row">
               {/* @ts-ignore */}
               <Input color="gray" label="Adicione seu email" size="lg" />
-              <Button color="blue" className="w-full px-4 md:w-[12rem]">
+              <Button color="blue" className="w-full px-3 md:w-[12rem] md:h-[3.1rem] items-center justify-center">
                 Vamos conversar ?
               </Button>
             </div>
